@@ -16,8 +16,9 @@ from sklearn.metrics import silhouette_samples
 np.random.seed(1000)
 
 
+# Download the dataset with the command: kaggle datasets download -d uciml/breast-cancer-wisconsin-data
 # Change <data_folder> with the actual path
-bc_dataset_path = 'C:\\Users\\giuse\\Desktop\\data.csv'
+bc_dataset_path = '<data_folde>/data.csv'
 
 
 if __name__ == '__main__':
