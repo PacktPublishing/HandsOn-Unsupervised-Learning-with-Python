@@ -39,7 +39,7 @@ if __name__ == '__main__':
     for i in range(0, picture.shape[0], square_fragment_size):
         for j in range(0, picture.shape[1], square_fragment_size):
             fragments[idx] = picture[i:i + square_fragment_size,
-                             j:j + square_fragment_size, :].flatten() / 255.0
+                             j:j + square_fragment_size, :].flatten()
             idx += 1
 
     # Perform the quantization
@@ -57,7 +57,7 @@ if __name__ == '__main__':
             qv_picture[i:i + square_fragment_size,
                        j:j + square_fragment_size, :] = \
                 km.cluster_centers_[qvs[idx]].\
-                    reshape((square_fragment_size, square_fragment_size, 3)) * 255.0
+                    reshape((square_fragment_size, square_fragment_size, 3))
             idx += 1
 
     # Show the final image
@@ -85,17 +85,19 @@ if __name__ == '__main__':
     ax[1, 1].set_xlabel('Green channel', fontsize=13)
     ax[1, 2].set_xlabel('Blue channel', fontsize=13)
 
+    ax[1, 0].set_xticks(np.arange(0, 256, 25))
+
     plt.show()
 
     # Compute the entropy of the red channels
-    hist_original, _ = np.histogram(picture[:, :, 0].flatten() / 255.0, bins=32)
-    hist_q, _ = np.histogram(qv_picture[:, :, 0].flatten() / 255.0, bins=32)
+    hist_original, _ = np.histogram(picture[:, :, 0].flatten(), bins=2048)
+    hist_q, _ = np.histogram(qv_picture[:, :, 0].flatten(), bins=2048)
 
     p_original = hist_original / np.sum(hist_original)
-    H_original = -np.sum(p_original * np.log(p_original + 1e-8))
+    H_original = -np.sum(p_original * np.log2(p_original + 1e-8))
 
     p_q = hist_q / np.sum(hist_q)
-    H_q = -np.sum(p_q * np.log(p_q + 1e-8))
+    H_q = -np.sum(p_q * np.log2(p_q + 1e-8))
 
-    print('Original entropy: {} - Quantized entropy: {}'.format(H_original, H_q))
+    print('Original entropy: {0:.3f} bits - Quantized entropy: {1:.3f} bits'.format(H_original, H_q))
 
