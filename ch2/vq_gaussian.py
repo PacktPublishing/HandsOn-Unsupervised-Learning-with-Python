@@ -1,5 +1,6 @@
 import numpy as np
 
+import matplotlib.cm as cm
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -42,13 +43,22 @@ if __name__ == '__main__':
             alpha = p - qv[qvi]
             qv[qvi] += (delta * alpha)
 
-    # Show the final configuration
-    fig, ax = plt.subplots(figsize=(10, 7))
+    distances = cdist(data, qv)
+    Y_qv = np.argmin(distances, axis=1)
 
-    ax.scatter(data[:, 0], data[:, 1], marker='d', s=20, label='Samples')
-    ax.scatter(qv[:, 0], qv[:, 1], s=100, label='QVs')
-    ax.set_xlabel(r'$x_0$')
-    ax.set_ylabel(r'$x_1$')
-    ax.legend()
+    # Show the final configuration
+    fig, ax = plt.subplots(1, 2, figsize=(20, 7), sharey=True)
+
+    ax[0].scatter(data[:, 0], data[:, 1], marker='d', s=20, label='Samples')
+    ax[0].scatter(qv[:, 0], qv[:, 1], s=100, label='QVs')
+    ax[0].set_xlabel(r'$x_0$')
+    ax[0].set_ylabel(r'$x_1$')
+    ax[0].legend()
+
+    for i in range(n_vectors):
+        ax[1].scatter(data[Y_qv == i, 0], data[Y_qv == i, 1], marker='o', s=20, c=cm.tab20(i),
+                      label='VQ {}'.format(i + 1))
+    ax[1].set_xlabel(r'$x_0$')
+    ax[1].legend()
 
     plt.show()
