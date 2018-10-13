@@ -90,8 +90,8 @@ if __name__ == '__main__':
     plt.show()
 
     # Compute the entropy of the red channels
-    hist_original, _ = np.histogram(picture[:, :, 0].flatten(), bins=2048)
-    hist_q, _ = np.histogram(qv_picture[:, :, 0].flatten(), bins=2048)
+    hist_original, _ = np.histogram(picture[:, :, 0].flatten() * 255.0, bins=256)
+    hist_q, _ = np.histogram(qv_picture[:, :, 0].flatten() * 255.0, bins=256)
 
     p_original = hist_original / np.sum(hist_original)
     H_original = -np.sum(p_original * np.log2(p_original + 1e-8))
