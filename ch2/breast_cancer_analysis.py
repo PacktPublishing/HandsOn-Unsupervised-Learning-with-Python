@@ -16,14 +16,22 @@ from sklearn.metrics import silhouette_samples
 np.random.seed(1000)
 
 
-# Download the dataset with the command: kaggle datasets download -d uciml/breast-cancer-wisconsin-data
+# Download from: https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.data
 # Change <data_folder> with the actual path
-bc_dataset_path = '<data_folde>/data.csv'
+bc_dataset_path = '<data_folder>/wdbc.data'
 
+bc_dataset_columns = ['id','diagnosis', 'radius_mean', 'texture_mean', 'perimeter_mean',
+                      'area_mean', 'smoothness_mean', 'compactness_mean', 'concavity_mean',
+                      'concave points_mean', 'symmetry_mean', 'fractal_dimension_mean',
+                      'radius_se','texture_se', 'perimeter_se', 'area_se', 'smoothness_se',
+                      'compactness_se', 'concavity_se', 'concave points_se', 'symmetry_se',
+                      'fractal_dimension_se', 'radius_worst', 'texture_worst', 'perimeter_worst',
+                      'area_worst', 'smoothness_worst', 'compactness_worst', 'concavity_worst',
+                      'concave points_worst', 'symmetry_worst', 'fractal_dimension_worst']
 
 if __name__ == '__main__':
     # Load the dataset
-    df = pd.read_csv(bc_dataset_path, index_col=0).fillna(0.0)
+    df = pd.read_csv(bc_dataset_path, index_col=0, names=bc_dataset_columns).fillna(0.0)
 
     # Show the overall statistical properties
     print(df.describe())
@@ -39,7 +47,7 @@ if __name__ == '__main__':
     plt.show()
 
     # Project the dataset on a bidimensional plane
-    cdf = df.drop(['diagnosis', 'Unnamed: 32'], axis=1)
+    cdf = df.drop(['diagnosis'], axis=1)
 
     tsne = TSNE(n_components=2, perplexity=10, random_state=1000)
     data_tsne = tsne.fit_transform(cdf)
