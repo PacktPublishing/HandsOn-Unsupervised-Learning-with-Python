@@ -10,6 +10,7 @@ from sklearn.manifold import TSNE
 
 from sklearn.metrics import homogeneity_score, completeness_score, adjusted_mutual_info_score, adjusted_rand_score
 from sklearn.metrics import silhouette_samples
+from sklearn.metrics.cluster import contingency_matrix
 
 
 # For reproducibility
@@ -161,6 +162,16 @@ if __name__ == '__main__':
     print('Homogeneity: {}'.format(homogeneity_score(kmdff['diagnosis'], kmdff['prediction'])))
     print('Adj. Mutual info: {}'.format(adjusted_mutual_info_score(kmdff['diagnosis'], kmdff['prediction'])))
     print('Adj. Rand score: {}'.format(adjusted_rand_score(kmdff['diagnosis'], kmdff['prediction'])))
+
+    # Compute and show the contingency matrix
+    cm = contingency_matrix(kmdff['diagnosis'].apply(lambda x: 0 if x == 'B' else 1), kmdff['prediction'])
+
+    fig, ax = plt.subplots(figsize=(8, 6))
+
+    with sns.plotting_context("notebook", font_scale=1.5):
+        sns.heatmap(cm, annot=True, fmt='d', ax=ax)
+
+    plt.show()
 
     # Perform a K-Means clustering with K=8
     km = KMeans(n_clusters=8, max_iter=1000, random_state=1000)
