@@ -8,7 +8,8 @@ import seaborn as sns
 from sklearn.cluster import KMeans
 from sklearn.manifold import TSNE
 
-from sklearn.metrics import homogeneity_score, completeness_score, adjusted_mutual_info_score, adjusted_rand_score
+from sklearn.metrics import homogeneity_score, completeness_score, v_measure_score, \
+    adjusted_mutual_info_score, adjusted_rand_score
 from sklearn.metrics import silhouette_samples
 from sklearn.metrics.cluster import contingency_matrix
 
@@ -160,6 +161,7 @@ if __name__ == '__main__':
 
     print('Completeness: {}'.format(completeness_score(kmdff['diagnosis'], kmdff['prediction'])))
     print('Homogeneity: {}'.format(homogeneity_score(kmdff['diagnosis'], kmdff['prediction'])))
+    print('V-Score: {}'.format(v_measure_score(kmdff['diagnosis'], kmdff['prediction'])))
     print('Adj. Mutual info: {}'.format(adjusted_mutual_info_score(kmdff['diagnosis'], kmdff['prediction'])))
     print('Adj. Rand score: {}'.format(adjusted_rand_score(kmdff['diagnosis'], kmdff['prediction'])))
 
