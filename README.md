@@ -27,57 +27,37 @@ All of the code is organized into folders. For example, Chapter02.
 
 The code will look like the following:
 ```
-if (test expression)
-{
-  Statement upon condition is true
-}
+X_train = faces['images']
+X_train = (2.0 * X_train) - 1.0
+
+width = X_train.shape[1]
+height = X_train.shape[2]
 ```
 
 **Following is what you need for this book:**
-Copy and paste the Audience section from the EPIC.
+This book is intended for statisticians, data scientists, machine learning developers, and deep learning practitioners who want to build smart applications by implementing key building block unsupervised learning, and master all the new techniques and algorithms offered in machine learning and deep learning using real-world examples. Some prior knowledge of machine learning concepts and statistics is desirable.
 
-With the following software and hardware list you can run all code files present in the book (Chapter 1-15).
+With the following software and hardware list you can run all code files present in the book (Chapter 1-09).
 
 ### Software and Hardware List
 
 | Chapter  | Software required                   | OS required                        |
 | -------- | ------------------------------------| -----------------------------------|
-| 1        | R version 3.3.0                     | Windows, Mac OS X, and Linux (Any) |
-| 2        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 3        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 4        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 5        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 6        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 7        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 8        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 9        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 10        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 11        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 12        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 13        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 14        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 15        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
+| 1-9      | Python 3.5+, Jupyter Notebbok       | Windows, Mac OS X, and Linux (Any) |
 
 
-We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](Graphics Bundle Link).
 
-## Code in Action
+We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://www.packtpub.com/sites/default/files/downloads/9781789348279_ColorImages.pdf).
 
-Click on the following link to see the Code in Action:
-
-[Placeholder link](www.youtube.com/URL)
 
 ### Related products <Other books you may enjoy>
 * Linux: Powerful Server Administration [[Packt]](https://www.packtpub.com/networking-and-servers/linux-powerful-server-administration?utm_source=github&utm_medium=repository&utm_campaign=9781788293778) [[Amazon]](https://www.amazon.com/dp/1788293770)
 
 * Linux Device Drivers Development [[Packt]](https://www.packtpub.com/networking-and-servers/linux-device-drivers-development?utm_source=github&utm_medium=repository&utm_campaign=9781785280009) [[Amazon]](https://www.amazon.com/dp/1788293770)
 
-## Get to Know the Author(s)
-**Author Name**
-Bio
-
-**Author Name**
-Bio
+## Get to Know the Author
+**Giuseppe Bonaccorso**
+Giuseppe Bonaccorso is an experienced manager in the fields of AI, data science, and machine learning. He has been involved in solution design, management, and delivery in different business contexts. He got his M.Sc.Eng in electronics in 2005 from the University of Catania, Italy, and continued his studies at the University of Rome Tor Vergata, Italy, and the University of Essex, UK. His main interests include machine/deep learning, reinforcement learning, big data, bio-inspired adaptive systems, neuroscience, and natural language processing.
 
 
 ## Other books by the authors
