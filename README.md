@@ -1,10 +1,10 @@
 # 	Hands-On Unsupervised Learning with Python
 
-<a href="Packt UTM URL of the Book"><img src="Cover Image URL of the Book" alt="Book Name" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/big-data-and-business-intelligence/hands-unsupervised-learning-python?utm_source=github&utm_medium=repository&utm_campaign=9781789348279"><img src="https://www.packtpub.com/sites/default/files/B10914_Cover.png" alt="Book Name" height="256px" align="right"></a>
 
-This is the code repository for [Book Name](Packt UTM URL of the Book), published by Packt.
+This is the code repository for [Hands-On Unsupervised Learning with Python](https://www.packtpub.com/big-data-and-business-intelligence/hands-unsupervised-learning-python?utm_source=github&utm_medium=repository&utm_campaign=9781789348279), published by Packt.
 
-**	Implement machine learning and deep learning models using Scikit-Learn, TensorFlow, and more**
+**Implement machine learning and deep learning models using Scikit-Learn, TensorFlow, and more**
 
 ## What is this book about?
 Unsupervised learning is about making use of raw, untagged data and applying learning algorithms to it to help a machine predict its outcome. With this book, you will explore the concept of unsupervised learning to cluster large sets of data and analyze them repeatedly until the desired outcome is found using Python.
@@ -57,7 +57,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 ## Get to Know the Author
 **Giuseppe Bonaccorso**
-Giuseppe Bonaccorso is an experienced manager in the fields of AI, data science, and machine learning. He has been involved in solution design, management, and delivery in different business contexts. He got his M.Sc.Eng in electronics in 2005 from the University of Catania, Italy, and continued his studies at the University of Rome Tor Vergata, Italy, and the University of Essex, UK. His main interests include machine/deep learning, reinforcement learning, big data, bio-inspired adaptive systems, neuroscience, and natural language processing.
+is an experienced manager in the fields of AI, data science, and machine learning. He has been involved in solution design, management, and delivery in different business contexts. He got his M.Sc.Eng in electronics in 2005 from the University of Catania, Italy, and continued his studies at the University of Rome Tor Vergata, Italy, and the University of Essex, UK. His main interests include machine/deep learning, reinforcement learning, big data, bio-inspired adaptive systems, neuroscience, and natural language processing.
 
 
 ## Other books by the authors
