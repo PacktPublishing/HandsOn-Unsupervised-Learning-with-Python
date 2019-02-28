@@ -60,7 +60,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 is an experienced manager in the fields of AI, data science, and machine learning. He has been involved in solution design, management, and delivery in different business contexts. He got his M.Sc.Eng in electronics in 2005 from the University of Catania, Italy, and continued his studies at the University of Rome Tor Vergata, Italy, and the University of Essex, UK. His main interests include machine/deep learning, reinforcement learning, big data, bio-inspired adaptive systems, neuroscience, and natural language processing.
 
 
-## Other books by the authors
+## Other books by the author
 * [Mastering Machine Learning Algorithms](https://www.packtpub.com/big-data-and-business-intelligence/mastering-machine-learning-algorithms?utm_source=github&utm_medium=repository&utm_campaign=9781788621113)
 * [Machine Learning Algorithms - Second Edition](https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-algorithms-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781789347999)
 
