@@ -16,7 +16,7 @@ This book covers the following exciting features:
 * Detect anomalies through density estimation
 * Perform principal component analysis using neural network models
 
-If you feel this book is for you, get your [copy](https://www.amazon.com/dp/10DigitISBN) today!
+If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1789349273) today!
 
 <a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" 
 alt="https://www.packtpub.com/" border="5" /></a>
@@ -51,9 +51,9 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 
 ### Related products <Other books you may enjoy>
-* Linux: Powerful Server Administration [[Packt]](https://www.packtpub.com/networking-and-servers/linux-powerful-server-administration?utm_source=github&utm_medium=repository&utm_campaign=9781788293778) [[Amazon]](https://www.amazon.com/dp/1788293770)
+* Building Machine Learning Systems with Python - Third Edition [[Packt]](https://www.packtpub.com/big-data-and-business-intelligence/building-machine-learning-systems-python-third-edition?utm_source=github&utm_medium=repository&utm_campaign=9781788623223) [[Amazon]](https://www.amazon.com/dp/1788622227)
 
-* Linux Device Drivers Development [[Packt]](https://www.packtpub.com/networking-and-servers/linux-device-drivers-development?utm_source=github&utm_medium=repository&utm_campaign=9781785280009) [[Amazon]](https://www.amazon.com/dp/1788293770)
+* Machine Learning Algorithms - Second Edition [[Packt]](https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-algorithms-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781789347999) [[Amazon]](https://www.amazon.com/dp/1789345480)
 
 ## Get to Know the Author
 **Giuseppe Bonaccorso**
